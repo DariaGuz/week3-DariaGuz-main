@@ -17,5 +17,6 @@ Returns:
 """
 
 
-def append_hi(lst):
-    pass
+def append_hi(lst = []):
+    if 'Hi!' not in lst: lst.append('Hi!')
+    return lst
