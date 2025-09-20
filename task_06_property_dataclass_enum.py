@@ -44,13 +44,22 @@ from enum import Enum
 
 
 class Product:
-    pass
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+        if self.price <= 0:
+            raise ValueError
 
 
 @dataclass
 class Order:
-    pass
+    name: str
+    quantity: int
+    product: Product
 
 
 class OrderStatus(Enum):
-    pass
+    NEW = 1
+    PAID = 2
+    SHIPPED = 3
+    CANCELLED = 4

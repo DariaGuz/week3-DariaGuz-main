@@ -23,4 +23,9 @@ Returns:
 
 # Ваш код здесь
 class Person:
-    pass
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Привет, меня зовут {self.name} и мне {self.age} лет!"

@@ -28,4 +28,9 @@ Returns:
 
 # Ваш код здесь
 def describe_creature(species, name, *abilities, **traits):
-    pass
+    return {
+        "species": species,
+        "name": name,
+        "abilities": abilities,
+        "traits": traits
+    }

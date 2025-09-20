@@ -21,4 +21,6 @@ Returns:
 
 # Ваш код здесь
 def apply_transform(numbers, transform):
-    pass
+    for i in range(len(numbers)):
+        numbers[i] = transform(numbers[i])
+    return numbers

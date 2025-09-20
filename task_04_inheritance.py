@@ -21,8 +21,13 @@ Returns:
 
 # Ваш код здесь
 class Animal:
-    pass
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return f"Я — {self.name}, я не знаю, что сказать."
 
 
 class Dog(Animal):
-    pass
+    def speak(self):
+        return f"Гав! Меня зовут {self.name}."

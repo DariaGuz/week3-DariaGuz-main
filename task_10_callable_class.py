@@ -22,4 +22,8 @@ Returns:
 
 # Ваш код здесь
 class Power:
-    pass
+    def __init__(self, p: float):
+        self.p = p
+
+    def __call__(self, a: float):
+        return a ** self.p
